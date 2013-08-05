@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Tabs</title>
+		<style>
+    		body {
+    			padding: 3em;
+    		}
+            .nav {
+            	padding: 0;
+            	margin: 0;
+            	list-style: none;
+            	margin-bottom: 24px;
+            	margin-bottom: 2.4rem;
+            	display: table;
+            	width: 100%;
+            	text-align: left;
+            }
+            .nav.nav-tabs {
+                border-bottom: 1px solid #d9d9d9;
+                width: 100%;
+            }
+            .nav.nav-tabs>li {
+                margin-bottom: -2px;
+            }
+            .nav>li {
+            	float: left;
+                display: block;
+            }
+            .nav>li>a, .nav .nav-header {
+                display: block;
+                text-decoration: none;
+                padding: 10px 14px;
+                padding: 1rem 1.4rem;
+            }
+            .nav.nav-tabs>li>a {
+                border: 1px solid transparent;
+                border-bottom: 0px none;
+                text-decoration: none;
+            }
+            .nav.nav-tabs>li.is-active>a {
+                border: 1px solid #d9d9d9;
+                border-bottom: 1px solid white;
+                background: #fff;
+            }
+
+            .tab-content {
+                padding-bottom: 24px;
+                padding-bottom: 2.4rem;
+            }
+            .tab-content .tab-panel {
+                display: none;
+            }
+            .tab-content .tab-panel.is-active {
+                display: block;
+            }
+		</style>
+	</head>
+	<body>
+		
+		<ul class="nav nav-tabs">
+            <li class="is-active"><a href="#tab1a">menu 1</a></li>
+            <li><a href="#tab2a">menu 2</a></li>
+            <li><a href="#tab3a">menu 3</a></li>
+        </ul>
+        
+        <div class="tab-content">
+            <div class="tab-panel is-active" id="tab1a">
+                <p>I'm in Section 1.</p>
+            </div>
+            <div class="tab-panel" id="tab2a">
+                <p>I'm in Section 2.</p>
+            </div>
+            <div class="tab-panel" id="tab3a">
+                <p>I'm in Section 3.</p>
+            </div>
+        </div>
+
+		<script src="build/build.js"></script>
+        <script>
+        	var $ = require('jquery');
+    		var Tabs = require('nav-tabs');
+
+    		var tabs = new Tabs('.nav-tabs > li > a');
+
+        </script>
+
+	</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "nav-tabs",
+  "repo": "chameleonui/nav-tabs",
+  "description": "Simple Nav Tabs controller",
+  "version": "0.0.1",
+  "keywords": ["tab", "tabs"],
+  "dependencies": {
+    "component/jquery": "1.9.1"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}

@@ -2,9 +2,6 @@
 build: components index.js
 	@component build --dev
 
-deploy: components index.js
-	@component build && uglifyjs -o build/build.min.js
-
 components: component.json
 	@component install --dev
 

@@ -7,16 +7,16 @@
 
   Install with [component(1)](http://component.io):
 
-    $ component install daidalos/tabs
+    $ component install daidalos/nav-tabs
 
 ## Using
 
 	<script src="build/build.js"></script>
     <script>
     	var $ = require('jquery');
-		var Tabs = require('tabs');
+		var Tabs = require('nav-tabs');
 
-		var tabs = new Tabs('[data-tabs]');
+		var tabs = new Tabs('.nav-tabs:not([data-nojs]) > li > a');
 
     </script>
 
